@@ -37,4 +37,14 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+    public double getPriceIncludingVat(){
+        return price+price*VAT;
+    }
+
+
+    public static void main(String[] args) {
+        Product product1=new Product("milk",6.02);
+        System.out.println(product1.getPriceIncludingVat());
+    }
 }
