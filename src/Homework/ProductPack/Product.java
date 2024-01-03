@@ -31,7 +31,6 @@ public class Product {
         this.price = price;
     }
 
-
     public String display() {
         return "Product{" +
                 "name='" + name + '\'' +
